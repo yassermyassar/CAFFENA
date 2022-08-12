@@ -231,7 +231,6 @@ outline: none;
 }
 .About .box img{
     width: 45%;
-    margin-right: 2rem;
 }
 .About .box .aboutWords{
     display: flex;
@@ -902,7 +901,7 @@ nav{
     }
     .About .box img{
         width: 100%;
-        margin-left: 2rem;
+        /* margin-left: 2rem; */
     }
     .section .caption{
         margin-left: 7rem;
@@ -1131,5 +1130,8 @@ footer .navbar2{
     }
     .header .idform input{
         background-color: white;
+    }
+    .About img{
+        width: 100% !important; 
     }
 }

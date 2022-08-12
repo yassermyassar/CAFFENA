@@ -1,0 +1,1113 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+
+}
+body{
+    font-family: 'Roboto Slab', serif;
+
+    background-color: var(--basicColor);
+
+}
+:root{
+    --basicColor: #010103;
+    --secColor: white;
+    --hoverColor: darkgoldenrod;
+    --buttonColor:#d3ad7f;
+    --aboutColor:#13131a;
+    --borderVar: 0.1rem solid white;
+}
+
+::-webkit-scrollbar {
+    width: 0.4rem;
+    background-color: black;
+}
+::-webkit-scrollbar-track{
+    background-color: #010103;
+}
+::-webkit-scrollbar-thumb {
+  background-color: black;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid #eee/* creates padding around scroll thumb */
+}
+
+/* header start */
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.4rem 2rem;
+    background-color: var(--basicColor);
+    color: var(--secColor);
+    height: 6rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    z-index: 1000;
+    border-bottom: 1px solid var(--secColor);
+        font-size: 1.4rem;
+
+
+}
+.header a{
+    margin: 0.7rem;
+    color: var(--secColor);
+    text-decoration: none;
+    transition: 0.3s linear;
+    right: -100%;
+}
+.header a:hover{
+    color: var(--hoverColor);
+    padding: 0.2rem;
+    border-bottom: 0.1rem solid var(--hoverColor);
+
+}
+.abs{
+    right: 0;
+}
+
+.header .icons i{
+    font-size: 1.7rem;
+}
+.header .icons i:hover{
+    color: var(--hoverColor);
+    cursor: pointer;
+
+}
+.header .icons .list{
+    display: none;
+}
+.cart-Items{
+    position: absolute;
+    top: 6rem;
+    right: -100%;
+    background-color: var(--secColor);
+    width: 27rem;
+    padding: 0.5rem 1.4rem;
+    z-index: 900;
+    
+}
+.products{
+    right: 0;
+}
+.header .cart-Items h5{
+    color: var(--basicColor);
+}
+.header .cart-Items h6{
+    color: var(--hoverColor);
+}
+.header .cart-Items img{
+    width: 9rem;
+
+}
+.header .cardOne{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.header .cardTwo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.header span{
+color: var(--hoverColor);
+cursor: pointer;
+}
+.header .cardThree{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.header .cardFour{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+ .idform{
+    position: absolute;
+    top: 5rem;
+    right: 1rem;
+    transform: scaleY(0);
+    transform-origin: top;
+    z-index: 999;
+   
+} 
+.idform input{
+width: 90%;
+outline: none;
+}
+.input{
+    transform: scaleY(1);
+    width: 90%;
+
+}
+#text::placeholder{
+    color: var(--basicColor);
+}
+.header .form #text{
+    width: 90%;
+    margin: 0 40px;
+    padding: 7px;
+    outline: none;
+    border-radius: 7px;
+}
+/* header end */
+/* sectio start */
+.section{
+   background-image: url(../images/home-img.jpeg);
+   background-size: cover;
+   width: 100%;
+   min-height: 100vh;
+   color: var(--secColor);
+   display: flex;
+   align-items: center;
+   background-position: center;
+   margin: 0 0 2rem 0;
+}
+.section .caption{
+    color: var(--secColor);
+    width: 32rem;
+    margin-left: 9.1rem;
+}
+.section .caption h1{
+    font-size: 3.6rem;
+    font-weight: bold;
+
+}
+.section .caption p{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.section .caption button{
+    background-color: var(--buttonColor);
+    padding: 0.4rem;
+    width: 10rem;
+    border: none;
+    color: var(--secColor);
+    
+}
+.section .caption button:hover{
+    width: 11rem;
+    transition: 0.3s linear;
+}
+
+
+/* section end */
+
+
+.About{
+    min-width:90% ;
+    margin: 2rem  4.7rem 6rem 4.7rem;
+
+    height: 80vh;
+    text-align: center;
+}
+.About h1{
+    color: var(--secColor);
+}
+.About span{
+    color: var(--buttonColor);
+}
+.About .box{
+    display: flex;
+    min-width:90%;
+    background-color: var(--aboutColor); 
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+.About .box img{
+    width: 45%;
+    height: 80vh;
+    margin-right: 2rem;
+}
+.About .box .aboutWords{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 3rem 3rem;
+}
+.About .box .aboutWords h2{
+    color: var(--secColor);
+    font-weight: 700;
+}
+.About .box .aboutWords p{
+    color: #cccccc;
+    font-weight: 100;
+    font-size: 1.2rem;
+    width: 27rem;
+}
+.About .box .aboutWords button{
+    background-color: var(--buttonColor);
+    padding: 0.4rem;
+    width: 10rem;
+    border: none;
+    color: var(--secColor);
+    
+}
+.About .box .aboutWords button:hover{
+    width: 11rem;
+    transition: 0.3s linear;
+}
+ /* about end */
+
+  /* menu start */
+  .menu{
+    text-align: center;
+    margin: 2rem 0rem;
+  }
+  .menu h1{
+    color: var(--secColor);
+  }
+  .menu h1 span{
+    color: var(--buttonColor);
+  }
+  .menu .dishes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+   .menu img{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    margin-top: 1rem;
+   }
+   .menu .dishes p{
+    font-size: 1.3rem;
+   }
+   .menu .card{
+    background-color: var(--basicColor);
+    border: var(--borderVar);
+    color: var(--secColor);
+    width: 12rem;
+
+   }
+   .menu .dishes .card-body a{
+    width: 10rem;
+    background-color: var(--buttonColor);
+    border: none;
+    cursor: pointer;
+   }
+   .menu .dishes .card-body a:hover{
+    width: 12rem;
+    transition: 0.3s linear;
+    font-size: 1.2rem;
+    color: var(--basicColor);
+    
+
+   }
+ /* menu end */
+
+
+
+
+
+ /* products start */
+.product{
+    margin: 2rem 1.7rem;
+    text-align: center;
+    
+
+}
+.product h1{
+    margin: 2rem 0;
+    color: var(--buttonColor);
+}
+
+.product .content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.product .product1{
+    border: var(--borderVar);
+    padding: 1rem;
+    width: 22.4rem;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--secColor);
+    margin: 0.7rem 0.4rem;
+    border-radius: 0.2rem;
+    
+}
+.product .product1 .icons3 i{
+    padding: 3px;
+    margin: 0.4rem;
+    border: var(--borderVar);
+
+    font-size: 1.4rem;
+    color: var(--secColor);
+
+
+}
+.product .product1 .icons3{
+    margin: 1rem 2.5rem;
+}
+.product .product1 .icons3 i:hover{
+    color: var(--hoverColor);
+    cursor: pointer;
+}
+.product .product1 .icons4{
+    color: var(--buttonColor);
+    margin: 0rem 3.4rem;
+
+}
+.product .product1 img{
+    width: 8.2rem;
+    margin: 0.2rem 2.8rem;
+
+}
+
+.product .product1 h1{
+    font-size: 2rem;
+    padding: 0 1.9rem;
+    color: var(--secColor);
+
+
+}
+.product .product1 h2{
+    margin: 0.1rem 2.7rem;
+    color: var(--buttonColor);
+}
+.product .product1 h2 span{
+    text-decoration: line-through;
+    font-size: 1.4rem;
+    color: var(--secColor);
+}
+
+ /* products end */
+
+/* review start */
+.reviews{
+    text-align: center;
+    color: var(--secColor);
+    margin: 2rem 8rem;
+
+
+}
+.reviews span{
+    color: var(--buttonColor);
+    font-size: 7rem;
+    margin: 0;
+}
+.reviews .opinions{
+    margin: 1rem  0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.reviews .opinions .opinion1 p{
+    margin: -3rem 0 0 0 ;
+   
+}
+.reviews h1{
+    margin: 2rem 0 0rem 0;
+}
+.reviews h1 .cust{
+    color: var(--buttonColor);
+    font-size: 2.6rem;
+}
+.reviews .opinions .opinion1:hover{
+    background-color: var(--hoverColor);
+    color: var(--basicColor);
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s linear;
+}
+.reviews .opinions .opinion1{
+    width: 22rem;
+    border: var(--borderVar);
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.7rem;
+    margin: 1rem 0.3rem;
+}
+.reviews .opinions .opinion1 img{
+    width: 8rem;
+    height: 8rem;
+    margin: 1rem;
+    border-radius: 50%;
+}
+.reviews .opinions .opinion1 .icons4 i{
+    color: var(--buttonColor);
+}
+  /* review end */
+
+
+    /* contact start */
+.contact{
+    margin: 2rem 8.4rem;
+    text-align: center;
+    width: 80%;
+
+}
+.contact h1{
+    color: var(--secColor);
+    margin: 2rem 0 1.4rem 0 ;
+}
+.contact h1 span{
+    color: var(--buttonColor);
+}
+
+.contact .info{
+    display: flex;
+    border: var(--borderVar);
+    align-items: center;
+        background-color: var(--aboutColor);
+
+}
+.contact .info iframe {
+    width: 45% ;
+    height: 25rem;
+    margin-right:3rem ;
+} 
+#labelname{
+    opacity: 0;
+}
+#labelnumber{
+    opacity: 0;
+}
+#labelmail{
+    opacity: 0;
+}
+
+.contact .info .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+        width: 45% ;
+    margin-left:1.4rem ;
+    color: var(--secColor);
+
+
+}
+.contact .info .form form{
+    display: flex;
+    flex-direction: column;
+
+}
+.contact .info .form form input{
+    margin: 0.2rem;
+    height: 2.7rem;
+    border-radius: 0.3rem;
+    outline: none;
+    border: none;
+    padding: 0.4rem;
+    width: 30rem;
+    background-color: var(--basicColor);
+    color: var(--secColor);
+
+}
+
+.contact .info .form form label{
+    margin: 0.3rem;
+    color: red;
+    font-weight: 600;
+}
+.contact .info .form button{
+    width: 18rem;
+    background-color: var(--buttonColor);
+    color: var(--secColor);
+    height: 2.4rem;
+    border-radius: 0.3rem;
+}
+.contact h3{
+    color: var(--buttonColor);
+}
+.contact .info .form button:hover{
+    width: 20rem;
+    transition: 0.3s;
+    font-weight: 600;
+}
+::placeholder{
+    padding: 0.7rem;
+    color: var(--secColor);
+}
+    /* contact end */
+
+
+
+    /* blogs start */
+.blogs{
+    margin: 2rem 8rem 4rem 8rem;
+    text-align: center;
+}
+.blogs .blogT{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.blogs h1{
+    color: var(--secColor);
+}
+.blogs h1 span{
+    color: var(--buttonColor);
+}
+.blogs .blog1{
+    width: 21.8rem;
+    display: flex;
+    flex-direction: column;
+    border: var(--borderVar);
+    color: var(--secColor);
+    margin: 0.5rem 0.7rem 2rem 0.5rem;
+}
+
+.blogs .blog1 h3{
+    margin: 0.7rem 0;
+padding-left: 1rem;}
+.blogs .blog1 h5{
+    color: var(--buttonColor);
+        padding-left: 1rem;
+
+}
+.blogs .blog1 p{
+    margin: 0 1rem 0 1rem ;
+
+}
+.blogs .blog1 img{
+    width: 100%;
+
+}
+.blogs .blog1 img:hover{
+       transform: scale(1.01);
+
+}
+.blogs .blog1 button{
+    width: 9rem;
+    background-color: var(--buttonColor);
+    color: var(--secColor);
+    height: 2.4rem;
+margin: 1rem auto  ;
+}
+.blogs .blog1 button:hover{
+    width: 11rem;
+    background-color: var(--hoverColor);
+    transition: 0.3s linear;
+}
+
+  /* blogs end */
+
+
+/* footer start */
+footer{
+    background-color: var(--aboutColor);
+    height: 15rem;
+    color: var(--secColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+footer .icons5{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 2rem;
+    margin-bottom: 1.4rem;
+}
+footer .icons5 i{
+    width: 2rem;
+    height: 2rem;
+    color: var(--secColor);
+    margin: 0.7rem;
+    padding: 0.5rem;
+
+
+}
+footer .icons5 i:hover{
+    color: var(--hoverColor);
+    cursor: pointer;
+    transition: 0.3s;
+}
+footer .navbar2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+footer .navbar2{
+        margin-bottom: 1.5rem;
+        
+}
+footer .navbar2 a{
+    text-decoration: none;
+    color: var(--secColor);
+    margin: 1rem;
+    font-size: 1.2rem;
+    border: var(--borderVar);
+
+    padding: 0.6rem;
+
+}
+footer .navbar2 a:hover{
+    cursor: pointer;
+    color: var(--hoverColor);
+
+}
+footer p{
+    font-size: 1.2rem;
+    font-weight: lighter;
+}
+footer p span{
+    color: var(--buttonColor);
+}
+/* footer end */
+
+
+
+
+
+@media (min-width:991px) {
+    body{
+        font-size: 1rem;
+    }
+    .header{
+        padding: 0.2rem 1rem;
+    }
+   
+    
+} 
+
+@media (max-width:1200px){
+    .About{
+         min-width:70% ;
+    height: 80vh;
+    text-align: center;
+    margin: 0 2rem;
+    }
+    .About .box{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .About .box .aboutWords{
+        min-width:70%;
+    }
+    
+   .product .content{
+    margin: -2rem;
+   }
+.product .content .product1{
+        margin: 1rem 0.4rem;
+
+
+}
+    .reviews{
+        margin: -2rem;
+    }
+    .reviews h1{
+        margin: 2rem 0 0.1rem 0;
+    }
+
+
+
+    .reviews .opinions{
+        margin: 1.7rem 0;
+
+}
+.reviews .opinions .opinion1{
+    width: 21rem;
+        margin: 1rem 0.2rem;
+
+}
+
+   .contact{
+    margin: 2rem 1rem;
+        width: 97%;
+
+
+}
+.contact .info iframe{
+    width: 27.5rem;
+    margin: 0rem 2rem 0rem 0rem;
+
+}
+.contact .info .form  h3{
+    margin-right: 2rem;
+}
+.contact .info .form form input{
+width: 27rem;
+margin-right: 0rem;
+}
+
+.contact .info button{
+    margin: 0 3rem 2rem 2rem !important;
+    width: 12rem !important;
+
+}
+.contact h1{
+    margin: 3rem 0 1rem 0;
+}
+.blogs .blog1{
+    width: 18rem;
+        margin: 0.5rem;
+
+}
+.blogs{
+    margin: 2rem 1rem;
+    text-align: center;
+}
+.About {
+        margin: 2rem 0.7rem;
+}
+}
+
+@media (max-width:991px) {
+    .header .icons .list{
+    display: inline-block;
+}
+nav{
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    display: block;
+    background-size: 30rem;
+    margin: 0.1rem 2rem;
+    width: 10rem;
+    color: black;
+    background-color: var(--secColor);
+    color: rebeccapurple;
+    text-align: center;
+}
+.header a{
+    display: block;
+    color: black;
+    transition: 0.3s linear;
+
+
+}
+html{
+    font-size: medium;
+}
+.About{
+    width: 97%;
+    font-size: small;
+    text-overflow: hidden;
+    margin: 2rem 2.7rem 1rem 1rem ;
+}
+.About .box  img{
+    width: 37%;
+}
+.About .box .aboutWords{
+    display: flex;
+    margin: 2rem 2.4rem 2rem 2rem;
+    
+
+
+}
+.About .box .aboutWords{
+    width: 60%;
+}
+.About .box .aboutWords h1{
+font-size: small;
+}
+.reviews{
+    margin: 2rem 3rem;
+}
+.reviews .opinions{
+        margin: 1.7rem 0;
+
+}
+.reviews .opinions .opinion1{
+    width: 18rem;
+        margin: 0.6rem 0.6rem;
+
+}
+
+
+ .contact{
+    margin: 2rem 1rem;
+        width: 97%;
+
+
+}
+.contact .info iframe{
+    width: 27.5rem;
+    margin: 0rem 2rem 0rem 0rem;
+
+}
+.contact .info .form  h3{
+    margin-right: 2rem;
+}
+.contact .info .form form input{
+width: 17rem;
+margin-right: 1.7rem;
+}
+.contact .info .form{
+    margin-left: 1.2rem;
+}
+.contact .info button{
+    margin: 0 3rem 2rem 2rem !important;
+    width: 9rem !important;
+
+}
+
+
+
+.blogs .blog1{
+    width: 18rem;
+    margin: 0.5rem
+}
+footer .navbar2{
+    margin: 0 1.5rem;
+}
+footer .navbar2 a{
+    margin: 0.5rem 0.4rem 0 0;
+    padding: 0.4rem;
+}
+footer .icons5{
+    margin-bottom: 0.7rem;
+}
+footer .navbar2{
+        margin: 2rem 0;
+        
+}
+
+
+}
+
+@media(max-width:768px){
+    
+    .About {
+        margin: 2rem 0.7rem;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: center;
+
+    }
+    .About .box{
+        flex-direction: column;
+    }
+    .About .box .aboutWords{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 2.3rem 0.6rem;
+
+    }
+    .About .box img{
+        width: 100%;
+    }
+    .section .caption{
+        margin-left: 7rem;
+    }
+    html{
+    font-size: medium;
+}
+.product .content {
+    margin: 0 4rem;
+}
+.product .content .product1 h1{
+    font-size: 1.4rem;
+}
+    .menu{
+        margin: 30rem 0 3rem 0;
+    }
+    .menu .dishes{
+     display: flex;
+     margin: 1rem 0rem;
+     flex-wrap: wrap;
+     
+    }
+    .menu .dishes .card{
+        width: 27rem !important;
+        margin: 1rem 0;
+    }
+     .product{
+        margin: 0 2rem;
+     }
+     .product .content{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+     }
+     .product .content .product1{
+        width: 26rem !important;
+        margin: 0;
+        height: 28rem !important;
+     }
+     .product .content .product1 .icons4 i{
+        font-size: 0.6rem;
+
+
+     }
+      .product .content .product1{
+        margin: 1rem 0.4rem 1.4rem 0.4rem;
+     }
+     .product .content .product1 img{
+width: 6rem;
+margin: 0 2.8rem;
+font-size: large;
+     }
+
+     .reviews .opinions{
+        margin: 1rem 2rem;
+     }
+.reviews .opinions .opinion1{
+    width: 26rem;
+}
+
+
+       .contact .info{
+    display: flex;
+    justify-content: center;
+     }
+     .contact{
+    margin: 2rem 1rem;
+
+}
+.contact .info iframe{
+    width: 27.5rem;
+
+}
+.contact .info .form  h3{
+    margin-right: 4rem;
+}
+.contact .info .form form input{
+width: 13rem;
+margin-right: 4rem;
+}
+.contact .info .form{
+    margin-left: 1.2rem;
+}
+.contact .info button{
+    margin: 0 4.9rem 2rem 2rem !important;
+    width: 9rem !important;
+
+}
+footer .navbar2{
+    margin: 0 1.5rem;
+}
+footer .navbar2 a{
+    margin: 0.5rem 0.4rem 0 0;
+    padding: 0.4rem;
+}
+footer .icons5{
+    margin-bottom: 0.7rem;
+}
+footer .navbar2{
+        margin-bottom: 0.7rem;
+        
+}
+.blogs .blogT .blog1{
+    width: 27rem;
+}
+}
+@media(max-width:568px){
+    .About {
+        margin: 0 1rem 22rem 1rem;
+        text-align: center;
+        font-size: small;
+
+    }
+    .About img{
+        width: 100% !important; 
+    }
+
+    .About .box{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+     .menu{
+        margin: 32rem 0 3rem 0 ;
+    }
+    .menu .dishes{
+     display: flex;
+     margin: 1rem 1rem;
+     flex-wrap: wrap;
+     
+    }
+    .menu .dishes .card{
+        width: 4rem;
+        margin: 1rem;
+    }
+     .product{
+        font-size: smaller;
+        margin: 1rem;
+     }
+     .product .content{
+        display: flex;
+        flex-wrap: wrap;
+     }
+     .product .content .product1{
+        margin: 1rem 0 1.4rem 0;
+        width: 28rem;
+     }
+
+     .contact .info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+     }
+    .contact{
+    margin: 1rem 0.5rem;
+    text-align: center;
+min-width: 80%;
+
+}
+
+.contact .info iframe{
+    width: 100%;
+    margin: 0rem 0.5rem 1.4rem 0.5rem;
+
+}
+.contact .info .form form input{
+width: 20rem;
+}
+.contact .info .form{
+    margin-left: 1.2rem;
+}
+.contact .info button{
+    width: 12rem !important;
+
+}
+/* \\\\\\\\\\\\\\\\\\ */
+.blogs{
+    margin: 2rem 0.5rem;
+    text-align: center;
+
+}
+
+.blogs .blogT{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+.blogs .blog1{
+    margin: 1rem 1rem;
+    width: 26rem;
+}
+footer .navbar2{
+    margin: 0 3rem;
+}
+footer .navbar2 a{
+    margin: 0.1rem;
+    padding: 0.4rem;
+}
+footer .icons5{
+    margin-bottom: 0.7rem;
+}
+footer .navbar2{
+        margin-bottom: 0.7rem;
+        
+}
+}

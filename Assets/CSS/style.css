@@ -1126,4 +1126,10 @@ footer .navbar2{
             margin-bottom: 4rem;
     height: 30rem !important;
     }
+    #list{
+        margin-right: 1rem;
+    }
+    .header .idform input{
+        background-color: white;
+    }
 }

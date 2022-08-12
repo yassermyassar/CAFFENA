@@ -12,6 +12,10 @@ body{
     background-color: var(--basicColor);
 
 }
+a{
+        text-decoration: none;
+
+}
 :root{
     --basicColor: #010103;
     --secColor: white;
@@ -34,6 +38,7 @@ body{
   border: 3px solid #eee/* creates padding around scroll thumb */
 }
 
+
 /* header start */
 .header{
     display: flex;
@@ -49,16 +54,14 @@ body{
     min-width: 100%;
     z-index: 1000;
     border-bottom: 1px solid var(--secColor);
-        font-size: 1.4rem;
+    font-size: 1.1rem;
 
 
 }
 .header a{
     margin: 0.7rem;
     color: var(--secColor);
-    text-decoration: none;
     transition: 0.3s linear;
-    right: -100%;
 }
 .header a:hover{
     color: var(--hoverColor);
@@ -72,6 +75,7 @@ body{
 
 .header .icons i{
     font-size: 1.7rem;
+    margin-left: 1rem;
 }
 .header .icons i:hover{
     color: var(--hoverColor);
@@ -79,7 +83,7 @@ body{
 
 }
 .header .icons .list{
-    display: none;
+display: none;
 }
 .cart-Items{
     position: absolute;
@@ -206,7 +210,7 @@ outline: none;
 
 .About{
     min-width:90% ;
-    margin: 2rem  4.7rem 6rem 4.7rem;
+    margin: 2rem  4.7rem 2rem 4.7rem;
 
     height: 80vh;
     text-align: center;
@@ -227,7 +231,6 @@ outline: none;
 }
 .About .box img{
     width: 45%;
-    height: 80vh;
     margin-right: 2rem;
 }
 .About .box .aboutWords{
@@ -235,7 +238,7 @@ outline: none;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    margin: 3rem 3rem;
+    margin: 3rem 4rem;
 }
 .About .box .aboutWords h2{
     color: var(--secColor);
@@ -264,7 +267,7 @@ outline: none;
   /* menu start */
   .menu{
     text-align: center;
-    margin: 2rem 0rem;
+    margin: 2rem 0 0  0rem;
   }
   .menu h1{
     color: var(--secColor);
@@ -291,6 +294,7 @@ outline: none;
     border: var(--borderVar);
     color: var(--secColor);
     width: 12rem;
+    margin-bottom: 3rem;
 
    }
    .menu .dishes .card-body a{
@@ -674,16 +678,7 @@ footer p span{
 
 
 
-@media (min-width:991px) {
-    body{
-        font-size: 1rem;
-    }
-    .header{
-        padding: 0.2rem 1rem;
-    }
-   
-    
-} 
+
 
 @media (max-width:1200px){
     .About{
@@ -769,32 +764,13 @@ margin-right: 0rem;
 }
 
 @media (max-width:991px) {
-    .header .icons .list{
-    display: inline-block;
-}
-nav{
-    position: absolute;
-    top: 100%;
-    right: -100%;
-    display: block;
-    background-size: 30rem;
-    margin: 0.1rem 2rem;
-    width: 10rem;
-    color: black;
-    background-color: var(--secColor);
-    color: rebeccapurple;
-    text-align: center;
-}
-.header a{
-    display: block;
-    color: black;
-    transition: 0.3s linear;
+    
 
+.header .icons #list{
+        display: inline-block;
 
 }
-html{
-    font-size: medium;
-}
+
 .About{
     width: 97%;
     font-size: small;
@@ -878,32 +854,55 @@ footer .navbar2{
         margin: 2rem 0;
         
 }
+nav{
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    display: block;
+    background-size: 30rem;
+    margin: 0.1rem 2rem;
+    width: 10rem;
+    color: black;
+    background-color: var(--secColor);
+    color: rebeccapurple;
+    text-align: center;
+}
+    .header a{
+    display: block;
+    color: black;
+    transition: 0.3s linear;
 
 
 }
 
+}
+
 @media(max-width:768px){
-    
+
+
     .About {
-        margin: 2rem 0.7rem;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        text-align: center;
+         margin-bottom: 4rem 
+        /* flex-direction: column;
+        justify-content: flex-start; */
+        /* align-items: center;
+        text-align: center; */
 
     }
     .About .box{
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     .About .box .aboutWords{
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: center; 
         margin: 2.3rem 0.6rem;
 
     }
     .About .box img{
         width: 100%;
+        margin-left: 2rem;
     }
     .section .caption{
         margin-left: 7rem;
@@ -918,7 +917,7 @@ footer .navbar2{
     font-size: 1.4rem;
 }
     .menu{
-        margin: 30rem 0 3rem 0;
+        margin: 27rem 0 3rem 0;
     }
     .menu .dishes{
      display: flex;
@@ -1012,7 +1011,7 @@ footer .navbar2{
 }
 @media(max-width:568px){
     .About {
-        margin: 0 1rem 22rem 1rem;
+        margin: 0 1rem 2rem 1rem;
         text-align: center;
         font-size: small;
 
@@ -1027,7 +1026,7 @@ footer .navbar2{
     }
     
      .menu{
-        margin: 32rem 0 3rem 0 ;
+        margin: 26rem 0 3rem 0 ;
     }
     .menu .dishes{
      display: flex;
@@ -1110,4 +1109,21 @@ footer .navbar2{
         margin-bottom: 0.7rem;
         
 }
+}
+@media (max-width:450px){
+
+    html{
+        font-size: 50%;
+    }
+    .header .logo img{
+        width: 9rem;
+        height: 5rem;
+    }
+    .menu{
+    margin: 4rem 0 3rem 0;
+    }
+    .menu .dishes .card{
+            margin-bottom: 4rem;
+    height: 30rem !important;
+    }
 }
